@@ -86,7 +86,7 @@ class MyDialog(wx.Dialog):
         labhead_t = wx.TextCtrl(self, validator=DataXferValidator(data, "labhead"))
         chargeacc_t = wx.TextCtrl(self, validator=DataXferValidator(data, "chargeacc"))
         taskcode_t = wx.TextCtrl(self, validator=DataXferValidator(data, "taskcode"))
-        acctick_t = wx.CheckBox(self, validator=DataXferValidator(data, "acctick"))
+        acctick_t = wx.CheckBox(self)
 
         # Use standard button IDs
         okay   = wx.Button(self, wx.ID_OK)
